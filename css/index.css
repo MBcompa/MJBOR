@@ -1,0 +1,283 @@
+body{
+    margin: 0;
+    padding: 0;
+  }
+   
+  .icon-image{
+      display: block; 
+      margin: 0 auto; 
+      padding: 0;
+      padding-left: 850px;
+      padding-top: 100px;
+      margin-right: 100px;
+      
+  }
+  .name-channel{
+      color: white;
+      font-family:sans-serif;
+      font-weight: bold;
+      font-size: 40px;
+      padding-left: 880px;
+     
+      
+    
+  }
+  
+  .icon-name{
+      color: #9ec7fb;
+      font-family: sans-serif;
+      font-weight: bold;
+      padding-left: 863px;
+      font-size: 45px;
+      padding-bottom: 150px;
+      text-shadow: 2px 2px 5px #9ec7fb;
+      
+  }
+  
+  .card {
+      display: flex;
+      height:150px;
+      width: 600px;
+      padding-left: 650px;
+      
+      
+      
+    }
+    
+    .card svg {
+      position: absolute;
+      display: flex;
+      width: 60%;
+      height: 100%;
+      font-size: 24px;
+      font-weight:700 ;
+      opacity: 1;
+      transition: opacity 0.25s;
+      z-index: 2;
+      cursor: pointer;
+      
+    }
+    
+    .card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4 {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25%;
+      color: whitesmoke;
+      font-size: 24px;
+      text-decoration: none;
+      transition: 0.25s;
+      border-radius: 50px;
+      
+    }
+    
+    .card svg {
+      transform: scale(1);
+      
+    }
+     
+    .card .social-link1:hover {
+      background-color:#1c1c1c;
+      animation: bounce_613 0.4s linear;
+  
+    }
+  
+    .card .social-link2:hover {
+      background-color: #1c1c1c;
+      animation: bounce_613 0.4s linear;
+    }
+    
+    .card .social-link3:hover {
+      background-color: #1c1c1c;
+      animation: bounce_613 0.4s linear;
+    }
+    
+    .card .social-link4:hover {
+      background-color: #1c1c1c;
+      animation: bounce_613 0.4s linear;
+    }
+    
+    @keyframes bounce_613 {
+      40% {
+        transform: scale(1.4);
+        
+      }
+    
+      60% {
+        transform: scale(0.8);
+      }
+    
+      80% {
+        transform: scale(1.2);
+      }
+    
+      100% {
+        transform: scale(1);
+      }
+    }
+  
+
+.flip-card {
+  padding-top: 100px;
+  padding-left: 775px;
+  background-color: transparent;
+  width: 350px;
+  height: 100px;
+  perspective: 1000px;
+  font-family: sans-serif;
+  padding-bottom: 100px;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 1rem;
+  font-size: 30px;
+}
+
+.title1{
+  font-size: 20px;
+}
+
+.flip-card-front {
+  background: linear-gradient(120deg, #9dc3f8 60%, #9dc3f8 88%,
+  #9dc3f8 40%, #9dc3f8 48%);
+  color: #141414;
+}
+
+.flip-card-back {
+  background: linear-gradient(120deg,#141414 30%, #5c677688%,
+  #5c6776 40%, #4e5a69 78%);
+  color:  #9dc3f8;
+  transform: rotateY(180deg);
+}
+
+
+
+.loader {
+  position: relative;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background: #fff;
+  border: 8px solid #9dc3f8;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-left: 1830px;
+  margin-top: 70px;
+  
+}
+
+.loader::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #9dc3f8;
+  z-index: 5;
+  border-bottom: 8px solid #131a1d;
+  box-sizing: border-box;
+  animation: eyeShade 3s infinite;
+  
+}
+
+.loader::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+  width: 32px;
+  z-index: 2;
+  height: 32px;
+  background: #111;
+  border-radius: 50%;
+  animation: eyeMove 3s infinite;
+  
+}
+
+@keyframes eyeShade {
+  0% {
+    transform: translateY(0)
+  }
+
+  20% {
+    transform: translateY(5px)
+  }
+
+  40% , 50% {
+    transform: translateY(-5px)
+  }
+
+  60% {
+    transform: translateY( -8px)
+  }
+
+  75% {
+    transform: translateY( 5px)
+  }
+
+  100% {
+    transform: translateY(10px)
+  }
+}
+
+@keyframes eyeMove {
+  0% {
+    transform: translate(0 , 0)
+  }
+
+  20% {
+    transform: translate(0px , 5px)
+  }
+
+  40% , 50% {
+    transform: translate(0px , -5px)
+  }
+
+  60% {
+    transform: translate(-10px , -5px)
+  }
+
+  75% {
+    transform: translate(-20px , 5px)
+  }
+
+  100% {
+    transform: translate(0 , 10px)
+  }
+}
+
+
+
+    
